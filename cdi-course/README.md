@@ -1,0 +1,1 @@
+Q/ implémenter l'injection de dépendances manuelle dans les classes du package *fr.pantheonsorbonne.ufr27.miage.exercise*

@@ -1,0 +1,5 @@
+Q/ Comment différencier les deux implémentations ?
+
+Ui8gRW4gZMOpZmluaXNzYW50IGRlcyBxdWFsaWZpZXJzIGRpZmbDqXJlbnRzIGV0IGVuIGxlcyBz
+cMOpY2lmaWFudCBhdXggcG9pbnRzIGQnaW5qZWN0aW9uIGV0IGxvcnMgZGUgbGEgZMOpY2xhcmF0
+aW9uIGRlcyBiZWFucwo=
