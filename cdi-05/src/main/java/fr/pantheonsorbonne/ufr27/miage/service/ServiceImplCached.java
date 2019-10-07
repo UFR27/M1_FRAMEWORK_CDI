@@ -6,11 +6,10 @@ import java.util.Map;
 
 import javax.enterprise.context.ApplicationScoped;
 
-import fr.pantheonsorbonne.ufr27.miage.qualifier.CachingCapable;
 
 
-@CachingCapable
-@ApplicationScoped
+
+
 public class ServiceImplCached implements Service, Serializable{
 
 

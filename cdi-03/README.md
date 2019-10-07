@@ -1,5 +1,3 @@
-Q/ Comment différencier les deux implémentations ?
+Q/ Quelles sont les différences entre les deux implémentation du package persistance?
+Q/ Comment différencier les deux implémentations pour pouvoir choisir celle qui sera injectée dans App ?
 
-Ui8gRW4gZMOpZmluaXNzYW50IGRlcyBxdWFsaWZpZXJzIGRpZmbDqXJlbnRzIGV0IGVuIGxlcyBz
-cMOpY2lmaWFudCBhdXggcG9pbnRzIGQnaW5qZWN0aW9uIGV0IGxvcnMgZGUgbGEgZMOpY2xhcmF0
-aW9uIGRlcyBiZWFucwo=

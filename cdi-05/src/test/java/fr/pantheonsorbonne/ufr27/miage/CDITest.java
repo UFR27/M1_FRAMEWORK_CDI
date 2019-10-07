@@ -9,7 +9,7 @@ import org.jboss.weld.junit5.WeldInitiator;
 import org.jboss.weld.junit5.WeldSetup;
 import org.junit.jupiter.api.Test;
 
-import fr.pantheonsorbonne.ufr27.miage.qualifier.CachingCapable;
+
 import fr.pantheonsorbonne.ufr27.miage.service.Service;
 
 @EnableWeld
@@ -20,7 +20,6 @@ public class CDITest {
 			.of(WeldInitiator.createWeld().addPackages(Package.getPackage("fr.pantheonsorbonne.ufr27.miage.service")));
 
 	@Inject
-	@CachingCapable
 	Service impl;
 
 	@Test

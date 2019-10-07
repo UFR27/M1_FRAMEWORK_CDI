@@ -8,4 +8,3 @@ Q/ Comment expliquez vous que le temps de réponse soit si long?
 
 Q/ Que suggérez-vous pour résoudre ce problème?
 
-Ui8gbGUgY2FsY3VsIGVzdCBlZmZlY3R1w6kgw6AgY2hhcXVlIGZvaXMgZGFucyBsYSBjbGFzc2UgZnIucGFudGhlb25zb3Jib25uZS51ZnIyNy5taWFnZS5zZXJ2aWNlLlNlcnZpY2VJbXBs

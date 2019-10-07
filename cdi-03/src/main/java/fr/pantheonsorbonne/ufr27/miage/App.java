@@ -1,10 +1,8 @@
 package fr.pantheonsorbonne.ufr27.miage;
 
 import javax.inject.Inject;
-
-import fr.pantheonsorbonne.ufr27.miage.model.User;
 import fr.pantheonsorbonne.ufr27.miage.persistance.Repository;
-import fr.pantheonsorbonne.ufr27.miage.qualifier.InMemory;
+import fr.pantheonsorbonne.ufr27.miage.model.User;
 
 /**
  * Hello world!
@@ -12,7 +10,7 @@ import fr.pantheonsorbonne.ufr27.miage.qualifier.InMemory;
  */
 public class App {
 
-	@Inject @InMemory
+	@Inject
 	public Repository<User> repo;
 
 
