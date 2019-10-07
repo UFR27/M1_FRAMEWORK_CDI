@@ -1,8 +1,7 @@
-package fr.pantheonsorbonne.ufr27.miage.exercise;
+package fr.pantheonsorbonne.ufr27.miage.exercise.coffee;
 
 public class ExpressoCoffee implements Coffee {
 
-	@Override
 	public int caffeineLevel() {
 		return 10;
 	}

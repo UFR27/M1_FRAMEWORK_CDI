@@ -1,4 +1,4 @@
-package fr.pantheonsorbonne.ufr27.miage;
+package fr.pantheonsorbonne.ufr27.miage.course;
 
 import java.util.ArrayList;
 import java.util.List;

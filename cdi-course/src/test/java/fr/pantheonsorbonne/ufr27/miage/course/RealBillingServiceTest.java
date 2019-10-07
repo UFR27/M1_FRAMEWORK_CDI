@@ -1,10 +1,21 @@
-package fr.pantheonsorbonne.ufr27.miage;
+package fr.pantheonsorbonne.ufr27.miage.course;
 
 import static org.junit.Assert.*;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+
+import fr.pantheonsorbonne.ufr27.miage.course.CreditCard;
+import fr.pantheonsorbonne.ufr27.miage.course.CreditCardProcessor;
+import fr.pantheonsorbonne.ufr27.miage.course.CreditCardProcessorFactory;
+import fr.pantheonsorbonne.ufr27.miage.course.FakeCreditCardProcessor;
+import fr.pantheonsorbonne.ufr27.miage.course.InMemoryTransactionLog;
+import fr.pantheonsorbonne.ufr27.miage.course.PizzaOrder;
+import fr.pantheonsorbonne.ufr27.miage.course.RealBillingService;
+import fr.pantheonsorbonne.ufr27.miage.course.Receipt;
+import fr.pantheonsorbonne.ufr27.miage.course.TransactionLog;
+import fr.pantheonsorbonne.ufr27.miage.course.TransactionLogFactory;
 
 public class RealBillingServiceTest {
 	private final PizzaOrder order = new PizzaOrder(100);
