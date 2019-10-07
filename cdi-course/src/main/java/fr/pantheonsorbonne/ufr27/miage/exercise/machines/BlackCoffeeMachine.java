@@ -2,8 +2,9 @@ package fr.pantheonsorbonne.ufr27.miage.exercise.machines;
 
 import fr.pantheonsorbonne.ufr27.miage.exercise.coffee.BlackCoffee;
 
+public class BlackCoffeeMachine implements CoffeeMachine {
 
-public class BlackCoffeeMachine {
+	@Override
 	public BlackCoffee getCoffee() {
 		return new BlackCoffee();
 	}
