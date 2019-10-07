@@ -13,8 +13,9 @@ public class AppTest {
 
 		try {
 			Waiter waiter = new Waiter();
-
-			Client client = new Client(-5);
+			
+			Client client = new Client(-3);
+			
 			int profit = 3;
 
 			while (!client.isAwake()) {
@@ -37,7 +38,7 @@ public class AppTest {
 		try {
 			Waiter waiter = new Waiter();
 
-			Client client = new Client(-19);
+			Client client = new Client(-20);
 			int profit = 3;
 
 			while (!client.isAwake()) {

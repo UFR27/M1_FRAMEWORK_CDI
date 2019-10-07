@@ -21,12 +21,12 @@ public class Client {
 
 	public void drink(Coffee c) throws CoffeeOverLoadException {
 		this.awakenessLevel += c.caffeineLevel();
-		if (this.awakenessLevel > 2) {
+		if (this.awakenessLevel > 6) {
 			throw new CoffeeOverLoadException();
 		}
 	}
 
 	public boolean isAwake() {
-		return this.awakenessLevel > 0;
+		return this.awakenessLevel >= 0;
 	}
 }

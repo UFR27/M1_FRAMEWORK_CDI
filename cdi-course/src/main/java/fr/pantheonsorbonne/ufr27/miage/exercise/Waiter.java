@@ -9,7 +9,7 @@ class Waiter {
 
 	public Coffee serveCoffee() {
 		
-		return new ExpressoCoffee();
+		return new BlackCoffee();
 	}
 
 }
