@@ -4,8 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-
 import fr.pantheonsorbonne.ufr27.miage.model.User;
+
+
 
 public class UserRepositoryHashMapImpl implements UserRepository {
 	Map<Long, User> map = new HashMap<>();

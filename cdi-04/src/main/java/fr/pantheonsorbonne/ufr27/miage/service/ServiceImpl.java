@@ -3,9 +3,12 @@ package fr.pantheonsorbonne.ufr27.miage.service;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
-
 import java.util.stream.LongStream;
 
+import javax.enterprise.context.RequestScoped;
+
+
+@RequestScoped
 public class ServiceImpl implements Service {
 
 	List<Long> ints = new ArrayList<>();

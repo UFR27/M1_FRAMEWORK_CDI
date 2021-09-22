@@ -2,9 +2,9 @@ package fr.pantheonsorbonne.ufr27.miage;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import javax.enterprise.inject.se.SeContainer;
-import javax.enterprise.inject.se.SeContainerInitializer;
 
+import jakarta.enterprise.inject.se.SeContainer;
+import jakarta.enterprise.inject.se.SeContainerInitializer;
 import org.junit.jupiter.api.Test;
 
 import fr.pantheonsorbonne.ufr27.miage.model.User;

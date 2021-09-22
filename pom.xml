@@ -1,24 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0                              http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0                              http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-  	<groupId>fr.pantheonsorbonne.ufr27.miage</groupId>
-	<artifactId>cdi</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+    <groupId>fr.pantheonsorbonne.ufr27.miage</groupId>
+    <artifactId>cdi</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
 
     <packaging>pom</packaging>
 
-    
 
     <modules>
-	    <module>cdi-00</module>
-    <module>cdi-01</module>
-    <module>cdi-02</module>
-    <module>cdi-03</module>
-    <module>cdi-04</module>
-<module>cdi-05</module>
-    <module>cdi-course</module>
-  </modules>
+        <module>cdi-00</module>
+        <module>cdi-01</module>
+        <module>cdi-02</module>
+        <module>cdi-03</module>
+        <module>cdi-04</module>
+        <module>cdi-05</module>
+        <module>cdi-course</module>
+    </modules>
 
-    
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>jakarta.enterprise</groupId>
+                <artifactId>jakarta.enterprise.cdi-api</artifactId>
+                <version>3.0.0</version>
+
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.weld.se</groupId>
+                <artifactId>weld-se-core</artifactId>
+                <version>4.0.2.Final</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-engine</artifactId>
+                <version>5.8.0</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-api</artifactId>
+                <version>5.8.0</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.glassfish.jersey</groupId>
+                <artifactId>jersey-bom</artifactId>
+                <version>3.0.2</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.h2database</groupId>
+                <artifactId>h2</artifactId>
+                <version>1.4.200</version>
+
+            </dependency>
+
+
+        </dependencies>
+
+
+    </dependencyManagement>
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.8.1</version>
+                    <configuration>
+                        <target>16</target>
+                        <source>16</source>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+
+    </build>
+
 </project>

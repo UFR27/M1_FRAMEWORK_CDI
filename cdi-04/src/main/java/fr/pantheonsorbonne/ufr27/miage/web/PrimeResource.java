@@ -11,7 +11,7 @@ import fr.pantheonsorbonne.ufr27.miage.service.Service;
 @Path("primes")
 public class PrimeResource {
 
-	@Inject
+	@Inject 
 	Service service;
 
 	@Path("{primeLimit}")
