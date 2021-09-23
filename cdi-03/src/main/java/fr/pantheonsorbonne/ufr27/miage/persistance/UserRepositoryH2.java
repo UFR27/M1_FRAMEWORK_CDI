@@ -8,12 +8,11 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 
+import fr.pantheonsorbonne.ufr27.miage.InH2;
 import fr.pantheonsorbonne.ufr27.miage.model.User;
-import jakarta.enterprise.inject.Default;
-import jakarta.inject.Named;
 import org.h2.tools.Server;
 
-
+@InH2
 public class UserRepositoryH2 implements UserRepository {
 
     static private Server server;

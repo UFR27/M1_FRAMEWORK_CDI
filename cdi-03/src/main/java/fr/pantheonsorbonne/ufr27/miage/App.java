@@ -11,6 +11,7 @@ import jakarta.inject.Inject;
 public class App {
 
     @Inject
+    @InH2
     public Repository<User> repo;
 
 

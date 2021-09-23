@@ -1,30 +1,26 @@
 package fr.pantheonsorbonne.ufr27.miage;
 
 
-
 import fr.pantheonsorbonne.ufr27.miage.model.User;
 import fr.pantheonsorbonne.ufr27.miage.persistance.Repository;
 import jakarta.inject.Inject;
 
 
 public class App {
-	
-	
-	@Inject
-	Repository<User> userRepo;
-	
+    @Inject
+    public App(Repository<User> userRepo) {
+        this.userRepo = userRepo;
+    }
+    final Repository<User> userRepo;
 
-	public Repository<User> getRepo() {
-		return this.userRepo;
-	}
-	
-	
-	public void setUserRepo(Repository<User> userRepo) {
-		this.userRepo = userRepo;
-	}
-	
-	
-	
+
+    public Repository<User> getRepo() {
+        return this.userRepo;
+    }
+
+
+
+
 }
 
 //public class App {

@@ -5,6 +5,7 @@ import java.util.Map;
 
 
 import fr.pantheonsorbonne.ufr27.miage.model.User;
+import jakarta.inject.Named;
 
 
 public class UserRepositoryHashMapImpl implements UserRepository {

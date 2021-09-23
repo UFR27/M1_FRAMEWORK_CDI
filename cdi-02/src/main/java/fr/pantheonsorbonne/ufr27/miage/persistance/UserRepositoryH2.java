@@ -7,11 +7,12 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import jakarta.inject.Named;
 import org.h2.tools.Server;
 
 import fr.pantheonsorbonne.ufr27.miage.model.User;
 
-
+@Named("h2")
 public class UserRepositoryH2 implements UserRepository {
 
 	static private Server server;
