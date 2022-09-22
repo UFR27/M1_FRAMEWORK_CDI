@@ -19,7 +19,7 @@ public class CDITest {
     App app;
 
     @BeforeEach
-    private void setup() {
+    public void setup() {
         initializer = SeContainerInitializer.newInstance();
 
         container = initializer.addPackages(true, App.class).initialize();
@@ -28,7 +28,7 @@ public class CDITest {
     }
 
     @AfterEach
-    private void teardown() {
+    public void teardown() {
         container.close();
     }
 

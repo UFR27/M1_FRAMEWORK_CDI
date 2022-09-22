@@ -18,8 +18,8 @@ public class CDITest {
 		try (SeContainer container = initializer.addPackages(true, App.class).initialize()) {
 			App app = container.select(App.class).get();
 			User u = new User();
-			app.repo.save(u);
-			User u2 = app.repo.find(u.getId());
+			app.getRepo().save(u);
+			User u2 = app.getRepo().find(u.getId());
 			assertTrue(u.equals(u2));
 
 		}

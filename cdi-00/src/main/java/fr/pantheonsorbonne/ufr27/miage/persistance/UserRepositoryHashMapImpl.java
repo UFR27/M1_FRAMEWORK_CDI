@@ -6,8 +6,9 @@ import java.util.Map;
 
 
 import fr.pantheonsorbonne.ufr27.miage.model.User;
+import jakarta.enterprise.context.ApplicationScoped;
 
-
+@ApplicationScoped
 public class UserRepositoryHashMapImpl implements UserRepository {
 	Map<Integer, User> map = new HashMap<>();
 

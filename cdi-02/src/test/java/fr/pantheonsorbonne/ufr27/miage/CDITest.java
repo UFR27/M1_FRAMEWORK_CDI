@@ -18,7 +18,7 @@ public class CDITest {
     App app;
 
     @BeforeEach
-    private void setup() {
+    public void setup() {
         initializer = SeContainerInitializer.newInstance();
 
         container = initializer.addPackages(true, App.class).initialize();
@@ -27,7 +27,7 @@ public class CDITest {
     }
 
     @AfterEach
-    private void teardown() {
+    public void teardown() {
         container.close();
     }
 
@@ -37,8 +37,8 @@ public class CDITest {
 
         User u = new User();
         u.setName("toto");
-        app.repo.save(u);
-        User u2 = app.repo.find(u.getId());
+        app.getRepo().save(u);
+        User u2 = app.getRepo().find(u.getId());
         assertTrue(u.getName().equals(u2.getName()));
 
 		
